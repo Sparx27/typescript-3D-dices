@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/ico" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roll Dices</title>
+</head>
+
+<body>
+  <main>
+    <section id="options">
+      <fieldset id="option-n-dices-box">
+        <legend>Number of dices</legend>
+        <label class="option-n-dices">
+          <input type="radio" name="dices" value="1" checked>
+          1
+        </label>
+        <label class="option-n-dices">
+          <input type="radio" name="dices" value="2">
+          2
+        </label>
+        <label class="option-n-dices">
+          <input type="radio" name="dices" value="3">
+          3
+        </label>
+        <label class="option-n-dices">
+          <input type="radio" name="dices" value="4">
+          4
+        </label>
+        <label class="option-n-dices">
+          <input type="radio" name="dices" value="5">
+          5
+        </label>
+      </fieldset>
+    </section>
+
+    <section id="actions">
+      <button id="btn-roll">Roll !</button>
+      <button title="restart" id="btn-restart">
+        <img src="./src/images/reload.svg" alt="Restart dice">
+      </button>
+    </section>
+
+    <section id="dice-container">
+      <template id="dice-template">
+        <div class="dice">
+          <div class="face face1"></div>
+          <div class="face face2"></div>
+          <div class="face face3"></div>
+          <div class="face face4"></div>
+          <div class="face face5"></div>
+          <div class="face face6"></div>
+        </div>
+      </template>
+    </section>
+
+
+
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
